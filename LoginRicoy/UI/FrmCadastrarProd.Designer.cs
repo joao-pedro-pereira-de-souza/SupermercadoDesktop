@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnMinis = new FerramentasMod.ButtonIconMod();
             this.btnSair = new FerramentasMod.ButtonIconMod();
             this.label3 = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
@@ -48,7 +50,6 @@
             this.lblStatusProgress = new System.Windows.Forms.Label();
             this.fvdProgress = new FiveCodMaterialDesign.FiveCodProgressBar();
             this.label2 = new System.Windows.Forms.Label();
-            this.ptbImagem = new System.Windows.Forms.PictureBox();
             this.pnlpg2 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonElipse1 = new FerramentasMod.ButtonElipse();
@@ -65,19 +66,25 @@
             this.panelMod6 = new FerramentasMod.PanelMod();
             this.AnimaPg = new System.Windows.Forms.Timer(this.components);
             this.AnimaVoltarPg = new System.Windows.Forms.Timer(this.components);
+            this.ptbImagem = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnlContainer.SuspendLayout();
             this.pnlPg1.SuspendLayout();
             this.pnlProgressoCad.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).BeginInit();
             this.pnlpg2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.btnMinis);
             this.panel1.Controls.Add(this.btnSair);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -85,21 +92,56 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(705, 46);
             this.panel1.TabIndex = 0;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::LoginRicoy.Properties.Resources.iconRegistroadd1;
+            this.pictureBox3.Location = new System.Drawing.Point(7, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnMinis
+            // 
+            this.btnMinis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinis.FlatAppearance.BorderSize = 0;
+            this.btnMinis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
+            this.btnMinis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
+            this.btnMinis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinis.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnMinis.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.btnMinis.IconColor = System.Drawing.Color.White;
+            this.btnMinis.IconHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
+            this.btnMinis.IconLeave = System.Drawing.Color.White;
+            this.btnMinis.IconSize = 16;
+            this.btnMinis.Location = new System.Drawing.Point(636, 9);
+            this.btnMinis.Name = "btnMinis";
+            this.btnMinis.Rotation = 0D;
+            this.btnMinis.Size = new System.Drawing.Size(23, 29);
+            this.btnMinis.TabIndex = 2;
+            this.btnMinis.UseVisualStyleBackColor = true;
+            this.btnMinis.Click += new System.EventHandler(this.btnMinis_Click);
             // 
             // btnSair
             // 
+            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSair.FlatAppearance.BorderSize = 0;
+            this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
+            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.btnSair.IconChar = FontAwesome.Sharp.IconChar.Times;
             this.btnSair.IconColor = System.Drawing.Color.White;
-            this.btnSair.IconHover = System.Drawing.Color.Black;
+            this.btnSair.IconHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
             this.btnSair.IconLeave = System.Drawing.Color.White;
             this.btnSair.IconSize = 16;
-            this.btnSair.Location = new System.Drawing.Point(657, 9);
+            this.btnSair.Location = new System.Drawing.Point(670, 9);
             this.btnSair.Name = "btnSair";
             this.btnSair.Rotation = 0D;
-            this.btnSair.Size = new System.Drawing.Size(36, 28);
+            this.btnSair.Size = new System.Drawing.Size(23, 29);
             this.btnSair.TabIndex = 1;
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
@@ -107,11 +149,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(9, 6);
+            this.label3.Location = new System.Drawing.Point(51, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 32);
+            this.label3.Size = new System.Drawing.Size(91, 25);
             this.label3.TabIndex = 0;
             this.label3.Text = "Cadastro";
             // 
@@ -120,7 +162,7 @@
             this.pnlContainer.BackColor = System.Drawing.Color.White;
             this.pnlContainer.Controls.Add(this.pnlPg1);
             this.pnlContainer.Controls.Add(this.pnlProgressoCad);
-            this.pnlContainer.Location = new System.Drawing.Point(251, 64);
+            this.pnlContainer.Location = new System.Drawing.Point(251, 59);
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(453, 370);
             this.pnlContainer.TabIndex = 1;
@@ -278,7 +320,7 @@
             this.pnlProgressoCad.Controls.Add(this.lblStatusProgress);
             this.pnlProgressoCad.Controls.Add(this.fvdProgress);
             this.pnlProgressoCad.Controls.Add(this.label2);
-            this.pnlProgressoCad.Location = new System.Drawing.Point(3, 321);
+            this.pnlProgressoCad.Location = new System.Drawing.Point(3, 318);
             this.pnlProgressoCad.Name = "pnlProgressoCad";
             this.pnlProgressoCad.Size = new System.Drawing.Size(447, 49);
             this.pnlProgressoCad.TabIndex = 24;
@@ -314,19 +356,6 @@
             this.label2.Size = new System.Drawing.Size(149, 17);
             this.label2.TabIndex = 23;
             this.label2.Text = "prograsso do cadastro:";
-            // 
-            // ptbImagem
-            // 
-            this.ptbImagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
-            this.ptbImagem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptbImagem.Image = global::LoginRicoy.Properties.Resources.iconIllustraitorAddImage;
-            this.ptbImagem.Location = new System.Drawing.Point(12, 64);
-            this.ptbImagem.Name = "ptbImagem";
-            this.ptbImagem.Size = new System.Drawing.Size(233, 373);
-            this.ptbImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbImagem.TabIndex = 10;
-            this.ptbImagem.TabStop = false;
-            this.ptbImagem.Click += new System.EventHandler(this.ptbImagem_Click);
             // 
             // pnlpg2
             // 
@@ -532,6 +561,28 @@
             this.AnimaVoltarPg.Interval = 10;
             this.AnimaVoltarPg.Tick += new System.EventHandler(this.AnimaVoltarPg_Tick);
             // 
+            // ptbImagem
+            // 
+            this.ptbImagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
+            this.ptbImagem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbImagem.Image = global::LoginRicoy.Properties.Resources.iconIllustraitorAddImage;
+            this.ptbImagem.Location = new System.Drawing.Point(12, 59);
+            this.ptbImagem.Name = "ptbImagem";
+            this.ptbImagem.Size = new System.Drawing.Size(233, 373);
+            this.ptbImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbImagem.TabIndex = 10;
+            this.ptbImagem.TabStop = false;
+            this.ptbImagem.Click += new System.EventHandler(this.ptbImagem_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(7, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(37, 37);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
             // FrmCadastrarProd
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -549,17 +600,19 @@
             this.Load += new System.EventHandler(this.FrmCadastrarProd_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.pnlContainer.ResumeLayout(false);
             this.pnlPg1.ResumeLayout(false);
             this.pnlPg1.PerformLayout();
             this.pnlProgressoCad.ResumeLayout(false);
             this.pnlProgressoCad.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).EndInit();
             this.pnlpg2.ResumeLayout(false);
             this.pnlpg2.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -605,5 +658,8 @@
         private System.Windows.Forms.Label label7;
         private MetroFramework.Controls.MetroComboBox mcbCode;
         private FerramentasMod.ButtonIconMod btnSair;
+        private FerramentasMod.ButtonIconMod btnMinis;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

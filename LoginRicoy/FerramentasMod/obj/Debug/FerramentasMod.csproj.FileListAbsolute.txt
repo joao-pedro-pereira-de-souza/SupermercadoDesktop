@@ -152,3 +152,17 @@ C:\Users\JOÃO\OneDrive\Área de Trabalho\LoginRicoy\FerramentasMod\obj\Debug\Fe
 C:\Users\JOÃO\OneDrive\Área de Trabalho\LoginRicoy\FerramentasMod\obj\Debug\FerramentasMod.csproj.CopyComplete
 C:\Users\JOÃO\OneDrive\Área de Trabalho\LoginRicoy\FerramentasMod\obj\Debug\FerramentasMod.dll
 C:\Users\JOÃO\OneDrive\Área de Trabalho\LoginRicoy\FerramentasMod\obj\Debug\FerramentasMod.pdb
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\FerramentasMod\bin\Debug\FerramentasMod.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\FerramentasMod\bin\Debug\FerramentasMod.pdb
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\FerramentasMod\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\FerramentasMod\obj\Debug\FerramentasMod.csprojAssemblyReference.cache
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\FerramentasMod\obj\Debug\FerramentasMod.ButtonElipse.resources
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\FerramentasMod\obj\Debug\FerramentasMod.ButtonIconMod.resources
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\FerramentasMod\obj\Debug\FerramentasMod.PanelMod.resources
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\FerramentasMod\obj\Debug\FerramentasMod.TextBoxMod.resources
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\FerramentasMod\obj\Debug\FerramentasMod.TextBoxPasswordMod.resources
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\FerramentasMod\obj\Debug\FerramentasMod.csproj.GenerateResource.cache
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\FerramentasMod\obj\Debug\FerramentasMod.csproj.CoreCompileInputs.cache
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\FerramentasMod\obj\Debug\FerramentasMod.csproj.CopyComplete
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\FerramentasMod\obj\Debug\FerramentasMod.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\FerramentasMod\obj\Debug\FerramentasMod.pdb

@@ -277,5 +277,14 @@
   <ItemGroup>
     <None Include="Resources\iconIllustraitorAddImage.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconRegistroAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconRegistroadd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconRegistroadd2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

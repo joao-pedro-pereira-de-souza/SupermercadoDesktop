@@ -10,3 +10,8 @@ C:\Users\JOÃO\OneDrive\Área de Trabalho\LoginRicoy\ControlSmtp\obj\Debug\Contr
 C:\Users\JOÃO\OneDrive\Área de Trabalho\LoginRicoy\ControlSmtp\obj\Debug\ControlSmtp.csproj.CoreCompileInputs.cache
 C:\Users\JOÃO\OneDrive\Área de Trabalho\LoginRicoy\ControlSmtp\obj\Debug\ControlSmtp.dll
 C:\Users\JOÃO\OneDrive\Área de Trabalho\LoginRicoy\ControlSmtp\obj\Debug\ControlSmtp.pdb
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\ControlSmtp\bin\Debug\ControlSmtp.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\ControlSmtp\bin\Debug\ControlSmtp.pdb
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\ControlSmtp\obj\Debug\ControlSmtp.csproj.CoreCompileInputs.cache
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\ControlSmtp\obj\Debug\ControlSmtp.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\ControlSmtp\obj\Debug\ControlSmtp.pdb

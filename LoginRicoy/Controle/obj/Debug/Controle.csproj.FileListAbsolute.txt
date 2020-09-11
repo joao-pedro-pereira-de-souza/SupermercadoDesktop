@@ -26,3 +26,16 @@ C:\Users\JOÃO\OneDrive\Área de Trabalho\LoginRicoy\Controle\obj\Debug\Controle
 C:\Users\JOÃO\OneDrive\Área de Trabalho\LoginRicoy\Controle\obj\Debug\Controle.csproj.CopyComplete
 C:\Users\JOÃO\OneDrive\Área de Trabalho\LoginRicoy\Controle\obj\Debug\Controle.dll
 C:\Users\JOÃO\OneDrive\Área de Trabalho\LoginRicoy\Controle\obj\Debug\Controle.pdb
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\Controle\bin\Debug\Controle.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\Controle\bin\Debug\Controle.pdb
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\Controle\bin\Debug\DataAcess.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\Controle\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\Controle\bin\Debug\FireSharp.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\Controle\bin\Debug\RestSharp.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\Controle\bin\Debug\DataAcess.pdb
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\Controle\bin\Debug\RestSharp.xml
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\Controle\obj\Debug\Controle.csprojAssemblyReference.cache
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\Controle\obj\Debug\Controle.csproj.CoreCompileInputs.cache
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\Controle\obj\Debug\Controle.csproj.CopyComplete
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\Controle\obj\Debug\Controle.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\Controle\obj\Debug\Controle.pdb

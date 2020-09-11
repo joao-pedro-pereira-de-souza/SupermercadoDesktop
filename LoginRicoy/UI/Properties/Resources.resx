@@ -127,6 +127,9 @@
   <data name="undraw_shopping_app_flsj" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\undraw_shopping_app_flsj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iconIllustraitorAddImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconIllustraitorAddImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="IconeCadastrarLeaver2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IconeCadastrarLeaver2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,10 +169,16 @@
   <data name="iconWhats" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconWhats.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="iconRegistroadd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconRegistroadd1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconRegistroOk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconRegistroAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="iconIllustrationCompra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconIllustrationCompra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iconIllustraitorAddImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconIllustraitorAddImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconRegistroadd1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconRegistroadd2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

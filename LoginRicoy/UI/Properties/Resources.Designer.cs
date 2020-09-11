@@ -183,6 +183,36 @@ namespace LoginRicoy.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconRegistroadd {
+            get {
+                object obj = ResourceManager.GetObject("iconRegistroadd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconRegistroadd1 {
+            get {
+                object obj = ResourceManager.GetObject("iconRegistroadd1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconRegistroOk {
+            get {
+                object obj = ResourceManager.GetObject("iconRegistroOk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconsmile {
             get {
                 object obj = ResourceManager.GetObject("iconsmile", resourceCulture);
