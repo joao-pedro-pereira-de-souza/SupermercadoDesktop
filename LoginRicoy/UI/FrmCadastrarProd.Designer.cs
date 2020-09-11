@@ -55,7 +55,7 @@
             this.buttonElipse1 = new FerramentasMod.ButtonElipse();
             this.label7 = new System.Windows.Forms.Label();
             this.mcbCode = new MetroFramework.Controls.MetroComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ptbCodeID = new System.Windows.Forms.PictureBox();
             this.txtValor = new FerramentasMod.TextBoxMod();
             this.label6 = new System.Windows.Forms.Label();
             this.panelMod4 = new FerramentasMod.PanelMod();
@@ -75,7 +75,7 @@
             this.pnlProgressoCad.SuspendLayout();
             this.pnlpg2.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCodeID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -380,7 +380,7 @@
             this.panel2.Controls.Add(this.buttonElipse1);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.mcbCode);
-            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.ptbCodeID);
             this.panel2.Location = new System.Drawing.Point(35, 108);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(381, 120);
@@ -428,15 +428,17 @@
             this.mcbCode.Size = new System.Drawing.Size(214, 29);
             this.mcbCode.TabIndex = 11;
             this.mcbCode.UseSelectable = true;
+            this.mcbCode.SelectedIndexChanged += new System.EventHandler(this.mcbCode_SelectedIndexChanged);
             // 
-            // pictureBox1
+            // ptbCodeID
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(240, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 108);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.ptbCodeID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptbCodeID.Location = new System.Drawing.Point(240, 4);
+            this.ptbCodeID.Name = "ptbCodeID";
+            this.ptbCodeID.Size = new System.Drawing.Size(133, 108);
+            this.ptbCodeID.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbCodeID.TabIndex = 10;
+            this.ptbCodeID.TabStop = false;
             // 
             // txtValor
             // 
@@ -610,7 +612,7 @@
             this.pnlpg2.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCodeID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbImagem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -653,7 +655,7 @@
         private FiveCodMaterialDesign.FiveCodProgressBar fvdProgress;
         private System.Windows.Forms.Label lblStatusProgress;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ptbCodeID;
         private FerramentasMod.ButtonElipse buttonElipse1;
         private System.Windows.Forms.Label label7;
         private MetroFramework.Controls.MetroComboBox mcbCode;

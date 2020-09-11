@@ -1,0 +1,13 @@
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\GeradorCode\bin\Debug\GeradorCode.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\GeradorCode\bin\Debug\GeradorCode.pdb
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\GeradorCode\bin\Debug\zxing.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\GeradorCode\bin\Debug\zxing.presentation.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\GeradorCode\bin\Debug\zxing.pdb
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\GeradorCode\bin\Debug\zxing.xml
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\GeradorCode\bin\Debug\zxing.presentation.pdb
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\GeradorCode\bin\Debug\zxing.presentation.xml
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\GeradorCode\obj\Debug\GeradorCode.csprojAssemblyReference.cache
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\GeradorCode\obj\Debug\GeradorCode.csproj.CoreCompileInputs.cache
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\GeradorCode\obj\Debug\GeradorCode.csproj.CopyComplete
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\GeradorCode\obj\Debug\GeradorCode.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\GeradorCode\obj\Debug\GeradorCode.pdb

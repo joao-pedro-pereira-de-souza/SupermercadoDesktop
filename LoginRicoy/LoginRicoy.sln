@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlSmtp", "ControlSmtp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FerramentasMod", "FerramentasMod\FerramentasMod.csproj", "{122D0B85-F83E-443E-81DD-6F5AE5E387C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorCode", "GeradorCode\GeradorCode.csproj", "{2E94B9EB-2BBC-4F32-AD9F-0EE17DABFEB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{122D0B85-F83E-443E-81DD-6F5AE5E387C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{122D0B85-F83E-443E-81DD-6F5AE5E387C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{122D0B85-F83E-443E-81DD-6F5AE5E387C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E94B9EB-2BBC-4F32-AD9F-0EE17DABFEB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E94B9EB-2BBC-4F32-AD9F-0EE17DABFEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E94B9EB-2BBC-4F32-AD9F-0EE17DABFEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E94B9EB-2BBC-4F32-AD9F-0EE17DABFEB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

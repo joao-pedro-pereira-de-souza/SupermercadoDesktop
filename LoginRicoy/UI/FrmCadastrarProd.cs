@@ -184,6 +184,20 @@ namespace UI
                         if (txtStatus.Text != "")
                         {
                             AnimaPg.Start();
+
+                            try
+                            {
+                                GeradorCode.QRCode code = new GeradorCode.QRCode();
+
+                                ptbCodeID.Image = code.GerarQRCode(txtID.Text);
+
+                            }
+                            catch(Exception ex)
+                            {
+
+                            }
+                           
+
                         }
                         else
                         {
@@ -473,8 +487,48 @@ namespace UI
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+
         #endregion
 
 
+        #region Página 2
+
+        private void mcbCode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            try
+            {
+                if (mcbCode.SelectedIndex == 0)
+                {
+
+                    if (txtID.Text.Length > 0)
+                    {
+                        GeradorCode.QRCode code = new GeradorCode.QRCode();
+
+                        ptbCodeID.Image = code.GerarQRCode(txtID.Text);
+                    }
+
+                }
+                if (mcbCode.SelectedIndex == 1)
+                {
+
+                    if (txtID.Text.Length > 0)
+                    {
+                        GeradorCode.BarCode code = new GeradorCode.BarCode();
+
+                        ptbCodeID.Image = code.GerarBarCode(txtID.Text);
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+           
+        }
+
+
+        #endregion
     }
 }

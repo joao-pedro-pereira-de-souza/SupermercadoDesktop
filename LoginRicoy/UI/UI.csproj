@@ -249,6 +249,10 @@
       <Project>{122d0b85-f83e-443e-81dd-6f5ae5e387c1}</Project>
       <Name>FerramentasMod</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GeradorCode\GeradorCode.csproj">
+      <Project>{2e94b9eb-2bbc-4f32-ad9f-0ee17dabfeb8}</Project>
+      <Name>GeradorCode</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconElipse.png" />

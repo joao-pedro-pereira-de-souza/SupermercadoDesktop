@@ -103,3 +103,8 @@ C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\UI\obj\
 C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\UI\obj\Debug\UI.csproj.CopyComplete
 C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\UI\obj\Debug\LoginRicoy.exe
 C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\UI\obj\Debug\LoginRicoy.pdb
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\UI\bin\Debug\GeradorCode.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\UI\bin\Debug\zxing.dll
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\UI\bin\Debug\GeradorCode.pdb
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\UI\bin\Debug\zxing.pdb
+C:\Users\JOÃO\OneDrive\Documentos\GitHub\SupermercadoDesktop\LoginRicoy\UI\bin\Debug\zxing.xml
