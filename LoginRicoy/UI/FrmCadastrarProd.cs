@@ -63,11 +63,7 @@ namespace UI
 
         #endregion
 
-        private void btnSair_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+       
         #region CadatroProd.
 
         private void AdicionarCadastro()
@@ -189,12 +185,12 @@ namespace UI
                             {
                                 GeradorCode.QRCode code = new GeradorCode.QRCode();
 
-                                ptbCodeID.Image = code.GerarQRCode(txtID.Text);
+                                ptbCodeID.Image = code.GerarQRCode(txtID.Text , Color.Red);
 
                             }
                             catch(Exception ex)
                             {
-
+                                
                             }
                            
 
@@ -505,7 +501,7 @@ namespace UI
                     {
                         GeradorCode.QRCode code = new GeradorCode.QRCode();
 
-                        ptbCodeID.Image = code.GerarQRCode(txtID.Text);
+                        ptbCodeID.Image = code.GerarQRCode(txtID.Text , Color.Blue);
                     }
 
                 }
@@ -516,7 +512,7 @@ namespace UI
                     {
                         GeradorCode.BarCode code = new GeradorCode.BarCode();
 
-                        ptbCodeID.Image = code.GerarBarCode(txtID.Text);
+                        ptbCodeID.Image = code.GerarBarCode(txtID.Text , Color.Yellow);
                     }
 
                 }
