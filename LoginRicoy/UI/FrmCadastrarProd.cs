@@ -108,7 +108,7 @@ namespace UI
                 // Convert Image 
                 MemoryStream msCode = new MemoryStream();
 
-                ptbCodeID.Image.Save(msCode, ImageFormat.Jpeg);
+                ptbCodeID.Image.Save(msCode, ImageFormat.Png);
 
                 byte[] aCode = msCode.GetBuffer();
 
