@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMini = new FerramentasMod.ButtonIconMod();
+            this.btnSair = new FerramentasMod.ButtonIconMod();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
@@ -49,8 +51,9 @@
             this.fvdProgress = new FiveCodMaterialDesign.FiveCodProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlpg2 = new System.Windows.Forms.Panel();
+            this.btnColorCode = new FerramentasMod.ButtonIconMod();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.buttonElipse1 = new FerramentasMod.ButtonElipse();
+            this.btnSalvarCode = new FerramentasMod.ButtonElipse();
             this.label7 = new System.Windows.Forms.Label();
             this.mcbCode = new MetroFramework.Controls.MetroComboBox();
             this.ptbCodeID = new System.Windows.Forms.PictureBox();
@@ -66,7 +69,6 @@
             this.AnimaVoltarPg = new System.Windows.Forms.Timer(this.components);
             this.ptbImagem = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnSair = new FerramentasMod.ButtonIconMod();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pnlContainer.SuspendLayout();
@@ -82,15 +84,58 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
+            this.panel1.Controls.Add(this.btnMini);
             this.panel1.Controls.Add(this.btnSair);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(707, 46);
+            this.panel1.Size = new System.Drawing.Size(704, 46);
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // btnMini
+            // 
+            this.btnMini.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMini.FlatAppearance.BorderSize = 0;
+            this.btnMini.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
+            this.btnMini.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
+            this.btnMini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMini.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnMini.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.btnMini.IconColor = System.Drawing.Color.White;
+            this.btnMini.IconHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
+            this.btnMini.IconLeave = System.Drawing.Color.White;
+            this.btnMini.IconSize = 18;
+            this.btnMini.Location = new System.Drawing.Point(631, 12);
+            this.btnMini.Name = "btnMini";
+            this.btnMini.Rotation = 0D;
+            this.btnMini.Size = new System.Drawing.Size(18, 21);
+            this.btnMini.TabIndex = 5;
+            this.btnMini.UseVisualStyleBackColor = true;
+            this.btnMini.Click += new System.EventHandler(this.btnMini_Click);
+            // 
+            // btnSair
+            // 
+            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSair.FlatAppearance.BorderSize = 0;
+            this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
+            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSair.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnSair.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnSair.IconColor = System.Drawing.Color.White;
+            this.btnSair.IconHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
+            this.btnSair.IconLeave = System.Drawing.Color.White;
+            this.btnSair.IconSize = 18;
+            this.btnSair.Location = new System.Drawing.Point(661, 13);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Rotation = 0D;
+            this.btnSair.Size = new System.Drawing.Size(18, 21);
+            this.btnSair.TabIndex = 4;
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // pictureBox3
             // 
@@ -316,6 +361,7 @@
             // pnlpg2
             // 
             this.pnlpg2.BackColor = System.Drawing.Color.White;
+            this.pnlpg2.Controls.Add(this.btnColorCode);
             this.pnlpg2.Controls.Add(this.panel2);
             this.pnlpg2.Controls.Add(this.txtValor);
             this.pnlpg2.Controls.Add(this.label6);
@@ -331,9 +377,30 @@
             this.pnlpg2.TabIndex = 26;
             this.pnlpg2.Visible = false;
             // 
+            // btnColorCode
+            // 
+            this.btnColorCode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnColorCode.FlatAppearance.BorderSize = 0;
+            this.btnColorCode.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnColorCode.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnColorCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColorCode.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnColorCode.IconChar = FontAwesome.Sharp.IconChar.Swatchbook;
+            this.btnColorCode.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
+            this.btnColorCode.IconHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
+            this.btnColorCode.IconLeave = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
+            this.btnColorCode.IconSize = 22;
+            this.btnColorCode.Location = new System.Drawing.Point(422, 108);
+            this.btnColorCode.Name = "btnColorCode";
+            this.btnColorCode.Rotation = 0D;
+            this.btnColorCode.Size = new System.Drawing.Size(18, 21);
+            this.btnColorCode.TabIndex = 12;
+            this.btnColorCode.UseVisualStyleBackColor = true;
+            this.btnColorCode.Click += new System.EventHandler(this.btnColorCode_Click);
+            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.buttonElipse1);
+            this.panel2.Controls.Add(this.btnSalvarCode);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.mcbCode);
             this.panel2.Controls.Add(this.ptbCodeID);
@@ -342,23 +409,24 @@
             this.panel2.Size = new System.Drawing.Size(381, 120);
             this.panel2.TabIndex = 11;
             // 
-            // buttonElipse1
+            // btnSalvarCode
             // 
-            this.buttonElipse1.AnguloColor = 45F;
-            this.buttonElipse1.borderRadius = 10;
-            this.buttonElipse1.ColorButton = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
-            this.buttonElipse1.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
-            this.buttonElipse1.ColorLeaver = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
-            this.buttonElipse1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonElipse1.EfeitoTexto = true;
-            this.buttonElipse1.ForeColor = System.Drawing.Color.White;
-            this.buttonElipse1.Location = new System.Drawing.Point(16, 84);
-            this.buttonElipse1.Name = "buttonElipse1";
-            this.buttonElipse1.Size = new System.Drawing.Size(98, 28);
-            this.buttonElipse1.TabIndex = 13;
-            this.buttonElipse1.TextLeaver = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonElipse1.Texto = "Salvar";
-            this.buttonElipse1.TextShow = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvarCode.AnguloColor = 45F;
+            this.btnSalvarCode.borderRadius = 10;
+            this.btnSalvarCode.ColorButton = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
+            this.btnSalvarCode.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(87)))));
+            this.btnSalvarCode.ColorLeaver = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
+            this.btnSalvarCode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalvarCode.EfeitoTexto = true;
+            this.btnSalvarCode.ForeColor = System.Drawing.Color.White;
+            this.btnSalvarCode.Location = new System.Drawing.Point(16, 84);
+            this.btnSalvarCode.Name = "btnSalvarCode";
+            this.btnSalvarCode.Size = new System.Drawing.Size(98, 28);
+            this.btnSalvarCode.TabIndex = 13;
+            this.btnSalvarCode.TextLeaver = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvarCode.Texto = "Salvar";
+            this.btnSalvarCode.TextShow = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvarCode.Click += new System.EventHandler(this.btnSalvarCode_Click);
             // 
             // label7
             // 
@@ -388,7 +456,7 @@
             // 
             // ptbCodeID
             // 
-            this.ptbCodeID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptbCodeID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.ptbCodeID.Location = new System.Drawing.Point(240, 4);
             this.ptbCodeID.Name = "ptbCodeID";
             this.ptbCodeID.Size = new System.Drawing.Size(133, 108);
@@ -541,27 +609,11 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // btnSair
-            // 
-            this.btnSair.FlatAppearance.BorderSize = 0;
-            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSair.IconColor = System.Drawing.Color.Black;
-            this.btnSair.IconHover = System.Drawing.Color.Black;
-            this.btnSair.IconLeave = System.Drawing.Color.White;
-       
-            this.btnSair.IconSize = 16;
-            this.btnSair.Location = new System.Drawing.Point(472, 4);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Rotation = 0D;
-            this.btnSair.Size = new System.Drawing.Size(42, 39);
-            this.btnSair.TabIndex = 4;
-            this.btnSair.UseVisualStyleBackColor = true;
-            // 
             // FrmCadastrarProd
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(707, 443);
+            this.ClientSize = new System.Drawing.Size(704, 443);
             this.Controls.Add(this.pnlpg2);
             this.Controls.Add(this.ptbImagem);
             this.Controls.Add(this.pnlContainer);
@@ -628,12 +680,14 @@
         private System.Windows.Forms.Label lblStatusProgress;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox ptbCodeID;
-        private FerramentasMod.ButtonElipse buttonElipse1;
+        private FerramentasMod.ButtonElipse btnSalvarCode;
         private System.Windows.Forms.Label label7;
         private MetroFramework.Controls.MetroComboBox mcbCode;
        
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private FerramentasMod.ButtonIconMod btnSair;
+        private FerramentasMod.ButtonIconMod btnMini;
+        private FerramentasMod.ButtonIconMod btnColorCode;
     }
 }

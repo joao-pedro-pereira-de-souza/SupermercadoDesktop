@@ -32,6 +32,7 @@ namespace UI
 
         #endregion
 
+        Color CorCode = ColorTranslator.FromHtml("#4b4b4b");
 
         public FrmCadastrarProd()
         {
@@ -185,7 +186,7 @@ namespace UI
                             {
                                 GeradorCode.QRCode code = new GeradorCode.QRCode();
 
-                                ptbCodeID.Image = code.GerarQRCode(txtID.Text , Color.Red);
+                                ptbCodeID.Image = code.GerarQRCode(txtID.Text , CorCode);
 
                             }
                             catch(Exception ex)
@@ -501,7 +502,7 @@ namespace UI
                     {
                         GeradorCode.QRCode code = new GeradorCode.QRCode();
 
-                        ptbCodeID.Image = code.GerarQRCode(txtID.Text , Color.Blue);
+                        ptbCodeID.Image = code.GerarQRCode(txtID.Text , CorCode);
                     }
 
                 }
@@ -512,7 +513,7 @@ namespace UI
                     {
                         GeradorCode.BarCode code = new GeradorCode.BarCode();
 
-                        ptbCodeID.Image = code.GerarBarCode(txtID.Text , Color.Yellow);
+                        ptbCodeID.Image = code.GerarBarCode(txtID.Text , CorCode);
                     }
 
                 }
@@ -526,5 +527,39 @@ namespace UI
 
 
         #endregion
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMini_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnColorCode_Click(object sender, EventArgs e)
+        {
+            ColorDialog color = new ColorDialog();
+
+            if(color.ShowDialog() == DialogResult.OK)
+            {
+                GeradorCode.QRCode code = new GeradorCode.QRCode();
+
+                ptbCodeID.Image = code.GerarQRCode(txtID.Text, color.Color);
+            }
+        }
+
+        private void btnSalvarCode_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog salvar = new SaveFileDialog();
+
+            salvar.Filter = "PNG | *.png | JPEG | *.jpg | BMP | *.bmp";
+
+            if(salvar.ShowDialog() == DialogResult.OK)
+            {
+                ptbCodeID.Image.Save(salvar.FileName);
+            }
+        }
     }
 }
