@@ -64,44 +64,89 @@ namespace UI
 
         #endregion
 
-       
+        #region Arrastar Form
+
+        #region Importar Dll user32
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+
+        #endregion
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+
+        #endregion
+
+
         #region CadatroProd.
 
         private void AdicionarCadastro()
         {
-            // Convert Image 
-            MemoryStream ms = new MemoryStream();
 
-            ptbImagem.Image.Save(ms, ImageFormat.Jpeg);
-
-            byte[] a = ms.GetBuffer();
-
-            string output = Convert.ToBase64String(a);
-
-            //
-
-            DataAcess.ControlDatabase bd = new DataAcess.ControlDatabase();
-            //Insert values Class Produtos.
-            DataAcess.Produtos prod = new DataAcess.Produtos()
+            try
             {
-                Id = int.Parse(txtID.Text),
-                Nome = txtNome.Text,
-                Valor = txtValor.Text,
-                Status = txtStatus.Text,
-                //                DataValidade = dtpValidade.Value.ToShortDateString(),
-                Quantidade = int.Parse(txtQuantidade.Text),
+                MemoryStream ms = new MemoryStream();
 
-                img = output
+                ptbImagem.Image.Save(ms, ImageFormat.Jpeg);
 
-            };
-            //
+                byte[] a = ms.GetBuffer();
 
-            // insert Values
-            bd.SetListProd("Produtos/" + txtID.Text, prod);
+                string output = Convert.ToBase64String(a);
 
-            MessageBox.Show("Produto :" + txtNome.Text + " foi cadastrado com sucesso");
+                //
 
-            limparCaixas();
+                #region Imagem CodeProd
+
+                // Convert Image 
+                MemoryStream msCode = new MemoryStream();
+
+                ptbCodeID.Image.Save(msCode, ImageFormat.Jpeg);
+
+                byte[] aCode = ms.GetBuffer();
+
+                string outputCode = Convert.ToBase64String(aCode);
+
+                //
+
+                #endregion
+
+                DataAcess.ControlDatabase bd = new DataAcess.ControlDatabase();
+                //Insert values Class Produtos.
+                DataAcess.Produtos prod = new DataAcess.Produtos()
+                {
+                    Id = int.Parse(txtID.Text),
+                    Nome = txtNome.Text,
+                    Valor = txtValor.Text,
+                    Status = txtStatus.Text,
+                    //                DataValidade = dtpValidade.Value.ToShortDateString(),
+                    Quantidade = int.Parse(txtQuantidade.Text),
+                    img = output,
+                    CodeProd = outputCode
+
+                };
+                //
+
+                // insert Values
+                bd.SetListProd("Produtos/" + txtID.Text, prod);
+
+                MessageBox.Show("Produto :" + txtNome.Text + " foi cadastrado com sucesso");
+
+                limparCaixas();
+            }
+            catch(Exception ex)
+            {
+
+            }
+            // Convert Image 
+          
         }
 
         #endregion
@@ -132,7 +177,22 @@ namespace UI
 
 
             ptbImagem.Image = Resources.iconIllustraitorAddImage;
- //           dtpValidade.Value = DateTime.Now.Date;
+            //           dtpValidade.Value = DateTime.Now.Date;
+
+            fvdProgress.Value = 0;
+            IdAdd = false;
+
+            NomeAdd = false;
+            StatusAdd = false;
+            QuantAdd = false;
+            ValorAdd = false;
+            ImgAdd = false;
+
+            ptbCodeID.ImageLocation = null;
+
+            lblStatusProgress.Text = fvdProgress.Value.ToString() + "%";
+
+           
         }
       
 
@@ -180,13 +240,34 @@ namespace UI
                     {
                         if (txtStatus.Text != "")
                         {
-                            AnimaPg.Start();
+                           
 
                             try
                             {
-                                GeradorCode.QRCode code = new GeradorCode.QRCode();
 
-                                ptbCodeID.Image = code.GerarQRCode(txtID.Text , CorCode);
+                                if(fvdProgress.Value == 64)
+                                {
+                                    GeradorCode.QRCode code = new GeradorCode.QRCode();
+
+                                    ptbCodeID.Image = code.GerarQRCode(txtID.Text, CorCode);
+
+                                    fvdProgress.Value += 6;
+
+                                    lblStatusProgress.Text = fvdProgress.Value.ToString() + "%";
+                                    AnimaPg.Start();
+
+                                }
+                                else
+                                {
+                                    GeradorCode.QRCode code = new GeradorCode.QRCode();
+
+                                    ptbCodeID.Image = code.GerarQRCode(txtID.Text, CorCode);
+                                    /// lblStatusProgress.Text = fvdProgress.Value.ToString() + "%";
+                                    /// 
+                                    AnimaPg.Start();
+                                }
+
+
 
                             }
                             catch(Exception ex)
@@ -408,7 +489,7 @@ namespace UI
             {
                 if (fvdProgress.Value > 0)
                 {
-                    fvdProgress.Value -= 16;
+                    fvdProgress.Value -= 10;
                     QuantAdd = false;
                 }
             }
@@ -416,7 +497,7 @@ namespace UI
             {
                 if (QuantAdd == false)
                 {
-                    fvdProgress.Value += 16;
+                    fvdProgress.Value += 10;
                     QuantAdd = true;
                 }
 
@@ -432,7 +513,7 @@ namespace UI
             {
                 if (fvdProgress.Value > 0)
                 {
-                    fvdProgress.Value -= 16;
+                    fvdProgress.Value -= 20;
                     ValorAdd = false;
                 }
             }
@@ -440,7 +521,7 @@ namespace UI
             {
                 if (ValorAdd == false)
                 {
-                    fvdProgress.Value += 16;
+                    fvdProgress.Value += 20;
                     ValorAdd = true;
                 }
 
@@ -461,32 +542,8 @@ namespace UI
             mcbCode.SelectedIndex = 0;
         }
 
-        private void btnMinis_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
 
-        #region Arrastar Form
-
-        #region Importar Dll user32
-
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
-
-        #endregion
-
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-
-        #endregion
-
+       
 
         #region Página 2
 
@@ -526,7 +583,56 @@ namespace UI
         }
 
 
+        #region Mudar a Cor do Code.
+
+        private void btnColorCode_Click(object sender, EventArgs e)
+        {
+            ColorDialog color = new ColorDialog();
+
+            if (color.ShowDialog() == DialogResult.OK)
+            {
+                if (mcbCode.SelectedIndex == 0)
+                {
+                    GeradorCode.QRCode code = new GeradorCode.QRCode();
+
+                    CorCode = color.Color;
+
+                    ptbCodeID.Image = code.GerarQRCode(txtID.Text, CorCode);
+
+                }
+                if (mcbCode.SelectedIndex == 1)
+                {
+                    GeradorCode.BarCode barcode = new GeradorCode.BarCode();
+
+                    CorCode = color.Color;
+                    ptbCodeID.Image = barcode.GerarBarCode(txtID.Text, CorCode);
+
+                }
+            }
+        }
+
         #endregion
+
+        #region Salvar PintureBox
+
+        private void btnSalvarCode_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog salvar = new SaveFileDialog();
+
+            salvar.Filter = "PNG | *.png | JPEG | *.jpg | BMP | *.bmp";
+
+            if (salvar.ShowDialog() == DialogResult.OK)
+            {
+                ptbCodeID.Image.Save(salvar.FileName);
+            }
+        }
+
+        #endregion
+
+
+        #endregion
+
+        #region Buttons padrão
 
         private void btnSair_Click(object sender, EventArgs e)
         {
@@ -538,27 +644,14 @@ namespace UI
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnColorCode_Click(object sender, EventArgs e)
+        #endregion
+
+        private void btnConcluir_Click(object sender, EventArgs e)
         {
-            ColorDialog color = new ColorDialog();
-
-            if(color.ShowDialog() == DialogResult.OK)
+            if(fvdProgress.Value == 100)
             {
-                GeradorCode.QRCode code = new GeradorCode.QRCode();
-
-                ptbCodeID.Image = code.GerarQRCode(txtID.Text, color.Color);
-            }
-        }
-
-        private void btnSalvarCode_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog salvar = new SaveFileDialog();
-
-            salvar.Filter = "PNG | *.png | JPEG | *.jpg | BMP | *.bmp";
-
-            if(salvar.ShowDialog() == DialogResult.OK)
-            {
-                ptbCodeID.Image.Save(salvar.FileName);
+                AdicionarCadastro();
+                AnimaVoltarPg.Start();
             }
         }
     }

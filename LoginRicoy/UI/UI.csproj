@@ -290,5 +290,8 @@
   <ItemGroup>
     <None Include="Resources\iconRegistroadd2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FrmsConfig\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

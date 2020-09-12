@@ -8,10 +8,11 @@ using System.Drawing;
 namespace Controle
 {
      public class ProdutosCart
-    {
+     {
         public string nomeProd;
         public int quantidade;
         public Image Produto;
         public string Valor;
-    }
+    
+     }
 }
