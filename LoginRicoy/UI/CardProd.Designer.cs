@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAdicionarProd = new FerramentasMod.ButtonIconMod();
+            this.btnmenosprod = new FerramentasMod.ButtonIconMod();
             this.lblValor = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtQuant = new System.Windows.Forms.TextBox();
@@ -37,15 +39,16 @@
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.ptbProduto = new System.Windows.Forms.PictureBox();
-            this.btnAdicionarProd = new FerramentasMod.ButtonIconMod();
-            this.btnmenosprod = new FerramentasMod.ButtonIconMod();
+            this.ptbCode = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbProduto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCode)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.ptbCode);
             this.panel1.Controls.Add(this.btnAdicionarProd);
             this.panel1.Controls.Add(this.btnmenosprod);
             this.panel1.Controls.Add(this.lblValor);
@@ -61,6 +64,46 @@
             this.panel1.Size = new System.Drawing.Size(413, 257);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnAdicionarProd
+            // 
+            this.btnAdicionarProd.FlatAppearance.BorderSize = 0;
+            this.btnAdicionarProd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnAdicionarProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnAdicionarProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdicionarProd.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnAdicionarProd.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnAdicionarProd.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
+            this.btnAdicionarProd.IconHover = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.btnAdicionarProd.IconLeave = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
+            this.btnAdicionarProd.IconSize = 20;
+            this.btnAdicionarProd.Location = new System.Drawing.Point(347, 157);
+            this.btnAdicionarProd.Name = "btnAdicionarProd";
+            this.btnAdicionarProd.Rotation = 0D;
+            this.btnAdicionarProd.Size = new System.Drawing.Size(29, 17);
+            this.btnAdicionarProd.TabIndex = 11;
+            this.btnAdicionarProd.UseVisualStyleBackColor = true;
+            this.btnAdicionarProd.Click += new System.EventHandler(this.btnAdicionarProd_Click);
+            // 
+            // btnmenosprod
+            // 
+            this.btnmenosprod.FlatAppearance.BorderSize = 0;
+            this.btnmenosprod.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnmenosprod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnmenosprod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmenosprod.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnmenosprod.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.btnmenosprod.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
+            this.btnmenosprod.IconHover = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            this.btnmenosprod.IconLeave = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
+            this.btnmenosprod.IconSize = 20;
+            this.btnmenosprod.Location = new System.Drawing.Point(312, 156);
+            this.btnmenosprod.Name = "btnmenosprod";
+            this.btnmenosprod.Rotation = 0D;
+            this.btnmenosprod.Size = new System.Drawing.Size(29, 17);
+            this.btnmenosprod.TabIndex = 10;
+            this.btnmenosprod.UseVisualStyleBackColor = true;
+            this.btnmenosprod.Click += new System.EventHandler(this.btnmenosprod_Click);
             // 
             // lblValor
             // 
@@ -159,45 +202,15 @@
             this.ptbProduto.TabIndex = 0;
             this.ptbProduto.TabStop = false;
             // 
-            // btnAdicionarProd
+            // ptbCode
             // 
-            this.btnAdicionarProd.FlatAppearance.BorderSize = 0;
-            this.btnAdicionarProd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnAdicionarProd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnAdicionarProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdicionarProd.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnAdicionarProd.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnAdicionarProd.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
-            this.btnAdicionarProd.IconHover = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btnAdicionarProd.IconLeave = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
-            this.btnAdicionarProd.IconSize = 20;
-            this.btnAdicionarProd.Location = new System.Drawing.Point(347, 157);
-            this.btnAdicionarProd.Name = "btnAdicionarProd";
-            this.btnAdicionarProd.Rotation = 0D;
-            this.btnAdicionarProd.Size = new System.Drawing.Size(29, 17);
-            this.btnAdicionarProd.TabIndex = 11;
-            this.btnAdicionarProd.UseVisualStyleBackColor = true;
-            this.btnAdicionarProd.Click += new System.EventHandler(this.btnAdicionarProd_Click);
-            // 
-            // btnmenosprod
-            // 
-            this.btnmenosprod.FlatAppearance.BorderSize = 0;
-            this.btnmenosprod.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnmenosprod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnmenosprod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnmenosprod.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnmenosprod.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.btnmenosprod.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
-            this.btnmenosprod.IconHover = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.btnmenosprod.IconLeave = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(67)))));
-            this.btnmenosprod.IconSize = 20;
-            this.btnmenosprod.Location = new System.Drawing.Point(312, 156);
-            this.btnmenosprod.Name = "btnmenosprod";
-            this.btnmenosprod.Rotation = 0D;
-            this.btnmenosprod.Size = new System.Drawing.Size(29, 17);
-            this.btnmenosprod.TabIndex = 10;
-            this.btnmenosprod.UseVisualStyleBackColor = true;
-            this.btnmenosprod.Click += new System.EventHandler(this.btnmenosprod_Click);
+            this.ptbCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.ptbCode.Location = new System.Drawing.Point(312, 190);
+            this.ptbCode.Name = "ptbCode";
+            this.ptbCode.Size = new System.Drawing.Size(98, 64);
+            this.ptbCode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbCode.TabIndex = 12;
+            this.ptbCode.TabStop = false;
             // 
             // CardProd
             // 
@@ -212,6 +225,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbProduto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCode)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -230,5 +244,6 @@
         private FerramentasMod.ButtonIconMod btnmenosprod;
         private FerramentasMod.ButtonIconMod btnAdicionarProd;
         public System.Windows.Forms.Label lblNome;
+        public System.Windows.Forms.PictureBox ptbCode;
     }
 }

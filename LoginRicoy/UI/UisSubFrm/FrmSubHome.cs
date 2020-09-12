@@ -53,16 +53,20 @@ namespace UI.UisSubFrm
             {
                 quantLiner--;
 
+             
                 CardProd card = new CardProd();
 
                 // Adicionar valores no card
                 card.lblNome.Text = prods[i].Nome;
                 card.lblStatus.Text = prods[i].Status;
-                card.quantProd = prods[i].Quantidade;
+                card.quantProd = int.Parse(prods[i].Quantidade);
                 card.lblValor.Text = prods[i].Valor;
                 //
 
                 //Convert Byte Image
+
+                string teste = prods[i].img;
+                #region Produto
 
                 byte[] b = Convert.FromBase64String(prods[i].img);
 
@@ -75,6 +79,22 @@ namespace UI.UisSubFrm
                 card.ptbProduto.Image = bm;
 
                 //
+                #endregion
+
+                #region Code
+                byte[] btCode = Convert.FromBase64String(prods[i].CodeProd);
+
+                MemoryStream msCode = new MemoryStream();
+
+                msCode.Write(btCode, 0, Convert.ToInt32(btCode.Length));
+                Bitmap bitmapCode = new Bitmap(msCode, false);
+                msCode.Dispose();
+
+                card.ptbCode.Image = bitmapCode;
+
+                #endregion
+
+                //
 
                 pnlContainer.Controls.Add(card);
 
@@ -82,19 +102,6 @@ namespace UI.UisSubFrm
                 card.Top = topCard;
 
                 topCard += (card.Height + 10);
-
-
-                /*
-                //Caso o limide de cada linha de card
-                if(quantLiner == 0)
-                {
-                    topCard += card.Height + 20;
-                    leftCard = 20;
-                    quantLiner = 2;
-
-                }
-                //
-                */
 
                 card.Show();
 

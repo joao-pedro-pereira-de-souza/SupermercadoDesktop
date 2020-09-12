@@ -15,7 +15,7 @@ namespace DataAcess
         public string Nome { get; set; }
         public string Valor { get; set; }      
         public string Status { get; set; }  
-        public int Quantidade { get; set; }
+        public string Quantidade { get; set; }
 
         //Imagens
         public string img { get; set; }

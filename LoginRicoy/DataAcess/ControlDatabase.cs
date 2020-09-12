@@ -41,5 +41,7 @@ namespace DataAcess
             FirebaseResponse response = client.Set(lisDiretory, prods);
 
         }
+
+      
     }
 }

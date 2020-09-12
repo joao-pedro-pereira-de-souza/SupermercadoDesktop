@@ -110,7 +110,7 @@ namespace UI
 
                 ptbCodeID.Image.Save(msCode, ImageFormat.Jpeg);
 
-                byte[] aCode = ms.GetBuffer();
+                byte[] aCode = msCode.GetBuffer();
 
                 string outputCode = Convert.ToBase64String(aCode);
 
@@ -127,7 +127,7 @@ namespace UI
                     Valor = txtValor.Text,
                     Status = txtStatus.Text,
                     //                DataValidade = dtpValidade.Value.ToShortDateString(),
-                    Quantidade = int.Parse(txtQuantidade.Text),
+                    Quantidade = txtQuantidade.Text,
                     img = output,
                     CodeProd = outputCode
 
