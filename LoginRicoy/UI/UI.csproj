@@ -165,6 +165,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reports\ReportUsuarios.rdlc" />
     <EmbeddedResource Include="UisSubFrm\FrmSubChat.resx">
       <DependentUpon>FrmSubChat.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +175,7 @@
     <EmbeddedResource Include="UserListProd.resx">
       <DependentUpon>UserListProd.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataAcess.Users.datasource" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

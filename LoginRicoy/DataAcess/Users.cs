@@ -15,6 +15,8 @@ namespace DataAcess
 
         public bool statusUser { get; set; }
         public string levelUser { get; set; }
+
+        public string compras { get; set; }
         //
 
     }

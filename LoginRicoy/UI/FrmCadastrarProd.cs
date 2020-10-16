@@ -32,18 +32,21 @@ namespace UI
 
         #endregion
 
-        Color CorCode = ColorTranslator.FromHtml("#4b4b4b");
+        Color CorCode = ColorTranslator.FromHtml("#EEBE5B");
 
         public FrmCadastrarProd()
         {
             InitializeComponent();
 
+            
             pnlContainer.Controls.Add(pnlpg2);
 
             pnlpg2.Top = 0;
 
             pnlpg2.Left = 450;
             pnlpg2.Visible = true;
+            
+
         }
 
         #region Design Shadow
@@ -559,7 +562,7 @@ namespace UI
                     {
                         GeradorCode.QRCode code = new GeradorCode.QRCode();
 
-                        ptbCodeID.Image = code.GerarQRCode(txtID.Text , CorCode);
+                        ptbCodeID.Image = code.GerarQRCode(txtNome.Text , CorCode);
                     }
 
                 }
@@ -570,7 +573,7 @@ namespace UI
                     {
                         GeradorCode.BarCode code = new GeradorCode.BarCode();
 
-                        ptbCodeID.Image = code.GerarBarCode(txtID.Text , CorCode);
+                        ptbCodeID.Image = code.GerarBarCode(txtNome.Text , CorCode);
                     }
 
                 }
@@ -617,14 +620,7 @@ namespace UI
 
         private void btnSalvarCode_Click(object sender, EventArgs e)
         {
-            SaveFileDialog salvar = new SaveFileDialog();
-
-            salvar.Filter = "PNG | *.png | JPEG | *.jpg | BMP | *.bmp";
-
-            if (salvar.ShowDialog() == DialogResult.OK)
-            {
-                ptbCodeID.Image.Save(salvar.FileName);
-            }
+            salvarImg();
         }
 
         #endregion
@@ -636,6 +632,13 @@ namespace UI
 
         private void btnSair_Click(object sender, EventArgs e)
         {
+            GeradorCode.QRCode code = new GeradorCode.QRCode();
+
+            ptbImagem.Image = code.GerarQRCode(txtNome.Text, ColorTranslator.FromHtml("#EEBE5B"));
+
+            salvarImg();
+
+
             this.Close();
         }
 
@@ -653,6 +656,23 @@ namespace UI
                 AdicionarCadastro();
                 AnimaVoltarPg.Start();
             }
+        }
+
+        public void salvarImg()
+        {
+            SaveFileDialog salvar = new SaveFileDialog();
+
+            salvar.Filter = "PNG | *.png | JPEG | *.jpg | BMP | *.bmp";
+
+            if (salvar.ShowDialog() == DialogResult.OK)
+            {
+                ptbCodeID.Image.Save(salvar.FileName);
+            }
+        }
+
+        private void ptbIcon_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
